@@ -1,24 +1,21 @@
 # # 🏗️ Terraform-AWS-AWS S3
 
-[![OpsStation](https://img.shields.io/badge/Made%20by-OpsStation-blue?style=flat-square&logo=terraform)](https://www.opsstation.com)
+[![vikas](https://img.shields.io/badge/Made%20by-vikas-blue?style=flat-square&logo=terraform)]
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Terraform](https://img.shields.io/badge/Terraform-1.13%2B-purple.svg?logo=terraform)](#)
-[![CI](https://github.com/OpsStation/terraform-aws-ec2/actions/workflows/ci.yml/badge.svg)](https://github.com/OpsStation/terraform-aws-ec2/actions/workflows/ci.yml)
+[![CI](https://github.com/chahalvikas2022/terraform-aws-ec2/actions/workflows/ci.yml/badge.svg)](https://github.com/chahalvikas2022/terraform-aws-ec2/actions/workflows/ci.yml)
 
-> 🌩️ **A production-grade, reusable AWS Ec2 module by [OpsStation](https://www.opsstation.com)**
+> 🌩️ **A production-grade, reusable AWS Ec2 module by [vikas]**
 > Designed for reliability, performance, and security — following AWS networking best practices.
 ---
 
-## 🏢 About OpsStation
+## 🏢 About vikas
 
-**OpsStation** delivers **Cloud & DevOps excellence** for modern teams:
+**vikas** delivers **Cloud & DevOps excellence** for modern teams:
 - 🚀 **Infrastructure Automation** with Terraform, Ansible & Kubernetes
 - 💰 **Cost Optimization** via scaling & right-sizing
 - 🛡️ **Security & Compliance** baked into CI/CD pipelines
 - ⚙️ **Fully Managed Operations** across AWS, Azure, and GCP
-
-> 💡 Need enterprise-grade DevOps automation?
-> 👉 Visit [**www.opsstation.com**](https://www.opsstation.com) or email **hello@opsstation.com**
 
 ---
 ## 📘 Introduction
@@ -47,7 +44,7 @@ It supports features like versioning, encryption, lifecycle rules, replication, 
 
 ```hcl
 module "s3_bucket" {
-  source      = "git::https://github.com/opsstation/terraform-aws-s3.git?ref=v1.0.0"
+  source      = "git::https://github.com/chahalvikas2022/terraform-aws-s3.git"
   name        = "test-secure-bucket"
   environment = local.environment
   label_order = local.label_order
@@ -60,7 +57,7 @@ module "s3_bucket" {
 ## Example: s3 complete
 ```hcl
 module "s3_bucket" {
-  source      = "git::https://github.com/opsstation/terraform-aws-s3.git?ref=v1.0.0"
+  source      = "git::https://github.com/chahalvikas2022/terraform-aws-s3.git"
   name        = "arcx-13"
   environment = local.environment
   label_order = local.label_order
@@ -249,7 +246,7 @@ module "s3_bucket" {
 
 ```hcl
 module "s3_bucket" {
-  source      = "git::https://github.com/opsstation/terraform-aws-s3.git?ref=v1.0.0"
+  source      = "git::https://github.com/chahalvikas2022/terraform-aws-s3.git"
   name        = "test-secure-bucket"
   environment = local.environment
   label_order = local.label_order
@@ -271,7 +268,7 @@ module "s3_bucket" {
 
 ```hcl
 module "s3_bucket" {
-  source      = "git::https://github.com/opsstation/terraform-aws-s3.git?ref=v1.0.0"
+  source      = "git::https://github.com/chahalvikas2022/terraform-aws-s3.git"
   name        = "test-encryption-bucket"
   s3_name     = "dmzx"
   environment = local.environment
@@ -288,7 +285,7 @@ module "s3_bucket" {
 
 ```hcl
 module "s3_bucket" {
-source        = "git::https://github.com/opsstation/terraform-aws-s3.git?ref=v1.0.0"
+source        = "git::https://github.com/chahalvikas2022/terraform-aws-s3.git"
 name          = "test-logging-bucket"
 s3_name       = "wewrrt"
 environment   = local.environment
@@ -305,7 +302,7 @@ depends_on    = [module.logging_bucket]
 
 ```hcl
 module "s3_bucket" {
-  source      = "git::https://github.com/opsstation/terraform-aws-s3.git?ref=v1.0.0"
+  source      = "git::https://github.com/chahalvikas2022/terraform-aws-s3.git"
   name        = "test-logging-encryption-bucket"
   s3_name     = "aqua"
   environment = local.environment
@@ -327,7 +324,7 @@ module "s3_bucket" {
 
 ```hcl
 module "s3_bucket" {
-  source      = "git::https://github.com/opsstation/terraform-aws-s3.git?ref=v1.0.0"
+  source      = "git::https://github.com/chahalvikas2022/terraform-aws-s3.git"
   name        = "test-s3"
   s3_name     = "poxord"
   environment = local.environment
@@ -439,5 +436,5 @@ module "s3_bucket" {
 
 ---
 
-### 💙 Maintained by [OpsStation](https://www.opsstation.com)
-> OpsStation — Simplifying Cloud, Securing Scale.
+### 💙 Maintained by [vikas]
+> vikas — Simplifying Cloud, Securing Scale.
